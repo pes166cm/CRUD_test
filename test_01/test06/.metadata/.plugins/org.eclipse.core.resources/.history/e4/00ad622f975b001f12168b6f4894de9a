@@ -1,0 +1,70 @@
+<%@page import="vo.SearchVO"%>
+<%@page import="java.util.ArrayList"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	String find = (String)request.getAttribute("find");
+	String search = (String)request.getAttribute("search");
+	ArrayList<SearchVO> list = (ArrayList<SearchVO>)request.getAttribute("list");
+%>    
+<jsp:include page="/master/header.jsp"/>
+<section>
+	<div class="content">
+		<p class="title">백신 예약 조회</p>
+		<table>	
+			<form action="searchProc.jsp" name="frm" method="post">
+				<tr>
+					<td>예약번호</td>
+					<td colspan="7"><input type="text" id="find" name="find"></td>
+				</tr>
+				<tr>
+					<td colspan="8">
+						<input type="submit" value="조회하기"  onclick="return check()">
+						<button><a href="/">홈으로</a></button>
+					</td>
+				</tr>
+			</form>
+			<tr>
+				<td>예약번호</td>
+				<td>성명</td>
+				<td>성별</td>
+				<td>병원이름</td>
+				<td>예약날짜</td>
+				<td>예약시간</td>
+				<td>백신코드명</td>
+				<td>병원지역</td>
+			</tr>
+			<%
+				if(list != null){
+					if(request.getAttribute("search").equals("no")){
+						out.print("<tr><td colspan='8'>검색된 데이터가 없습니다.</td></tr>");
+					} else{
+						for(InputVO vo : list){
+							%>
+							<tr>
+								<td><%=vo.getR_no() %></td>
+								<td><%=vo.getJ_jumin() %></td>
+								<td><%=vo.getH_code() %></td>
+								<td><%=vo.getR_date() %></td>
+								<td><%=vo.getR_time() %></td>
+								<td><%=vo.getR_vcode() %></td>
+							</tr>
+							<%
+						}
+					}
+				}
+			%>
+		</table>
+	</div>
+</section>
+<jsp:include page="/master/footer.jsp"/>
+<script>
+	function check(){
+		if(document.querySelector("#find").value.trim() == ""){
+			alert("예약번호를 입력해주세요.");
+			document.querySelector("#find").focus();
+			return false;
+		}
+		return true;
+	}
+</script>

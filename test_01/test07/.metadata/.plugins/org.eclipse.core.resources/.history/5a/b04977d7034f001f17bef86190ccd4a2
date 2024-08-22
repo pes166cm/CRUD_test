@@ -1,0 +1,56 @@
+@charset "UTF-8";
+*{
+	padding: 0;
+	margin: 0 auto;
+}
+
+a{
+	
+}
+
+header{
+	
+}
+
+nav{
+	
+}
+
+nav> ul{
+	
+}
+
+nav> ul> li{
+	
+}
+
+section{
+	
+}
+
+section> .content{
+	
+}
+
+section> .content .title{
+	
+}
+
+table{
+	
+}
+
+tr, td{
+	
+}
+
+footer{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: white;
+	background: olive;
+	bottom: 0;
+	position: fixed;
+}

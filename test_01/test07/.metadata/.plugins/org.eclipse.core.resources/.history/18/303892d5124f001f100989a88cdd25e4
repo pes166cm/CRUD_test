@@ -1,0 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	String id = request.getParameter("id");
+	String name = request.getParameter("name");
+	int credit = Integer.parseInt(request.getParameter("credit"));
+	String lecturer = request.getParameter("lecturer");
+	String week = request.getParameter("week");
+	String start_hour = request.getParameter("start_hour");
+	String end_hour = request.getParameter("end_hour");
+
+%>

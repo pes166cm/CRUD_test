@@ -1,0 +1,50 @@
+@charset "UTF-8";
+*{
+	
+}
+
+a{
+	
+}
+
+header{
+	
+}
+
+nav{
+	
+}
+
+nav> ul{
+	
+}
+
+nav> ul> li{
+	
+}
+
+section{
+	
+}
+
+section> .content{
+	
+}
+
+section> .content .title{
+	
+}
+
+table{
+	
+}
+
+tr, td{
+	
+}
+
+footer{
+	
+}
+
+

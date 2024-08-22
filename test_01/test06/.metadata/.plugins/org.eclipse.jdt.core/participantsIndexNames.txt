@@ -1,0 +1,7 @@
+INDEX VERSION 1.134
+D:\work30907\test06\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3095751799.index
+\HRD_06\src\main\java
+D:\work30907\test06\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\317400795.index
+\HRD_06\src\main\java
+D:\work30907\test06\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\362293498.index
+\HRD_06\src\main\java

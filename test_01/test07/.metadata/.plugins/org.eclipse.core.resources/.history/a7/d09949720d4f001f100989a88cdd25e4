@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	
+%>
+<jsp:include page="/master/header.jsp"/>
+<section>
+	<div class="content">
+		<p class="title">교과목 목록 수정</p>
+		<table>
+			<tr>
+				<td>과목코드</td>
+				<td><input type="text" id="id" name="id" value="<%= %>"></td>
+			</tr>
+		</table>
+	</div>
+</section>
+<jsp:include page="/master/footer.jsp"/>

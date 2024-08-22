@@ -1,0 +1,12 @@
+package vo;
+
+public class SearchVO {
+	private int r_no;
+	private String j_name;
+	private String h_name;
+	private String j_jumin;
+	private String r_time;
+	private String h_code;
+	private String h_zone;
+	
+}

@@ -1,0 +1,31 @@
+<%@page import="vo.InputVO"%>
+<%@page import="java.util.ArrayList"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	String find = (String)request.getAttribute("find");
+	String search = (String)request.getAttribute("search");
+	ArrayList<InputVO> list = (ArrayList<InputVO>)request.getAttribute("list");
+%>    
+<jsp:include page="/master/header.jsp"/>
+<section>
+	<div class="content">
+		<p class="title">백신 예약 조회</p>
+			<table>
+				<tr>
+					<form action="searchProc.jsp" name="frm" method="post">
+						<td>예약번호</td>
+						<td><input type="text" id="find" name="find" value='<%=find != null ? find : ""%>'></td>
+					</form>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="조회하기">
+						<a href="/"><input type="reset" value="홈으로"></a>
+					</td>
+				</tr>
+			</table>
+		
+	</div>
+</section>
+<jsp:include page="/master/footer.jsp"/>

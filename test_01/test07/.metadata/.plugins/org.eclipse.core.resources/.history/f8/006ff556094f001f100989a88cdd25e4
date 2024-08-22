@@ -1,0 +1,11 @@
+package vo;
+
+public class ListVO {
+	private String id;
+	private String name;
+	private int credit;
+	private int lecturer;
+	private int week;
+	private int start_hour;
+	private int end_hour;
+}
